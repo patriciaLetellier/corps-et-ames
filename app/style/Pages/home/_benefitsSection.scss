@@ -1,0 +1,91 @@
+.benefitsSection {
+  padding: 60px;
+  background: linear-gradient(to bottom, #fae4df, #ffffff, #fae4df);
+
+  .titleAside {
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border: 3px solid #b27c7c;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+    .coloredTitle {
+      color: #b27c7c;
+    }
+  }
+  .benefitsArticle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    .benefitsArticleRow {
+      display: flex;
+      flex-direction: row;
+      .imgWrapper {
+        flex: 3;
+        position: relative;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          border-radius: 15px;
+          transform: rotate(6deg);
+          box-shadow: 0px 10px 10px rgb(186, 184, 184);
+        }
+      }
+      .rankWrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        .rankBorder {
+          padding: 10px;
+          border: #b27c7c 3px solid;
+          border-radius: 50%;
+          color: #b27c7c;
+          font-size: 22px;
+          font-weight: 600;
+          height: 30px;
+          width: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .descriptionWrapper {
+        flex: 5;
+        background-color: rgb(229 202 202);
+        border-radius: 20px;
+        padding: 30px;
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 25px;
+          position: relative;
+          &::after {
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: rgb(212, 211, 211);
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

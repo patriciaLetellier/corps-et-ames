@@ -1,0 +1,16 @@
+.contactSection {
+  .contactArticle {
+    flex: 2;
+  }
+  .imgContainer {
+    flex: 3;
+    img {
+      height: auto;
+      max-height: 600px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+  }
+}

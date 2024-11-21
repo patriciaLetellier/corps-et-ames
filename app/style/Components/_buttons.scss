@@ -1,0 +1,26 @@
+.mainButton {
+  background-color: #b27c7c;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  width: fit-content;
+  opacity: 1;
+  transition: opacity 0.5s;
+  .arrowWrapper {
+    width: 32px;
+    height: 32px;
+    background-color: #6d4c4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}

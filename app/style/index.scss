@@ -1,0 +1,23 @@
+@import "./Base/resetCss";
+@import "./Base/global";
+
+@import "./Utils/fonts";
+
+@import "./Components/buttons";
+
+@import "./Layout/header";
+@import "./Layout/footer";
+
+@import "./Pages/home/mainSection";
+@import "./Pages/home/presentationSection";
+@import "./Pages/home/benefitsSection";
+@import "./Pages/home/contactSection";
+@import "./Pages/advicesCollection/advicesCollection";
+
+@import "./Pages/contact/contactInfo";
+@import "./Pages/contact/contactForm";
+@import "./Components/book";
+
+@import "./Components/form";
+
+@import "leaflet/dist/leaflet.css";
