@@ -1,10 +1,15 @@
 .book {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 550px;
+  min-width: 280px;
   position: relative;
   perspective: 1500px;
   font-family: "Dancing Script", cursive;
   color: rgba(39, 15, 8, 0.922);
+  @media screen and (max-width: 500px) {
+    height: 450px;
+  }
 
   .page {
     position: absolute;
@@ -45,12 +50,21 @@
         rgb(247, 247, 247) 18%
       );
       h2 {
+        position: absolute;
+        z-index: 99;
+        bottom: 50%;
+        font-size: 60px;
+        font-weight: 900;
+        color: #392929;
+      }
+      h3 {
         font-size: 40px;
         text-align: center;
         margin-top: 50px;
       }
       img {
         margin-bottom: 30px;
+        object-fit: cover;
       }
       .text {
         display: flex;

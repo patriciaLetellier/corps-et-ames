@@ -12,7 +12,7 @@ export default function Footer() {
         height={54}
         alt="logo"
       />
-      <p className="footerTitle">Faisons naître l’extraordinaire !</p>
+      <p className="footerTitle">Faisons naître l’extraordinaire!</p>
       <Link href="/contact" className="mainButton">
         Contactez moi
         <div className="arrowWrapper">
@@ -38,7 +38,7 @@ export default function Footer() {
         </li>
       </ul>
       <div className="footerAside">
-        <p>© 2024 Corps et Ame. All rights reserved.</p>
+        <p className="copyright">© 2024 Corps et Ame. All rights reserved.</p>
         <nav>
           <Link href={"/contact"}>Accueil</Link>
           <Link href={"/#presentation"}>Qui je suis</Link>

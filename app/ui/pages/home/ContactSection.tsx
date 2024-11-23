@@ -10,7 +10,7 @@ export default function ContactSection() {
     <section className="contactSection">
       <Form />
       <div className="mapContainer">
-        <DynamicMap center={[43.330699, 6.603915]} />
+        <DynamicMap center={[43.308779, 6.639488]} />
       </div>
     </section>
   );

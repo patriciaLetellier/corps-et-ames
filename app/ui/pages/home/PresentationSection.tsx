@@ -17,25 +17,31 @@ export default function PresentationSection() {
               des croyances, à des souvenirs enfouis ou au transgenerationnel,
               (chocs émotionnels non exprimés) qui ne nous appartiennent pas.
               Ils impactent notre corps physique émotionnel et mental mais
-              seraient aussi à l'origine de schémas répétitifs. Ces mémoires
-              cellulaires peuvent également impacter notre descendance. Par
-              cette séance,
+              seraient aussi à l'origine de schémas répétitifs.
             </p>
-            <ul>
+            <div className="qualificationsWrapper">
               <h4>Qualification :</h4>
-              <li>
-                <p>
-                  Thérapeute en écoute du corps en relation d’aide dans le
-                  langage non verbal
-                </p>
-              </li>
-              <li>
-                <p>
-                  Thérapeute en libération des mémoires cellulaire et
-                  transgérationnel
-                </p>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <p>
+                    Thérapeute en écoute du corps en relation d’aide dans le
+                    langage non verbal
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Thérapeute en libération des mémoires cellulaire et
+                    transgérationnel
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Thérapeute en libération des blocages mentaux, physiques et
+                    émotionnels.
+                  </p>
+                </li>
+              </ul>
+            </div>
             <Link className="mainButton" href="/contact">
               Contactez moi
               <div className="arrowWrapper">

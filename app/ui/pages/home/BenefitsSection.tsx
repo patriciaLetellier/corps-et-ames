@@ -7,8 +7,8 @@ export default function BenefitsSection() {
     <section id="benefits" className="benefitsSection">
       <div className="titleAside">Mes préstations</div>
       <h2>
-        Apaiser vos
-        <span className="coloredTitle"> émotions</span> et retrouver votre
+        Apaisez vos
+        <span className="coloredTitle"> émotions</span> et retrouvez votre
         <span className="coloredTitle"> équilibre</span>.
       </h2>
       <article className="benefitsArticle">

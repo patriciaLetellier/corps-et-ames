@@ -18,15 +18,15 @@ interface MapProps {
 }
 
 const Map: React.FC<MapProps> = ({
-  center = [16.249554, -61.343473],
-  zoom = 11,
+  center = [43.308779, 6.639488],
+  zoom = 13,
 }) => {
   return (
     <MapContainer
       center={center}
       zoom={zoom}
       scrollWheelZoom={false}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "100%", width: "100%", minHeight: 300 }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

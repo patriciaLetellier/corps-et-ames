@@ -6,12 +6,16 @@ footer {
   background: linear-gradient(to top, #fae4df, #ffffff);
   padding: 20px 50px;
   color: #6d4c4c;
+  @media screen and (max-width: 700px) {
+    padding: 20px;
+  }
 
   .logo {
     border-radius: 9px;
   }
   .footerTitle {
     font-size: 25px;
+    text-align: center;
   }
   .mainButton {
     font-size: 20px;
@@ -28,16 +32,31 @@ footer {
     justify-content: space-between;
     width: 100%;
     column-gap: 30px;
-
+    row-gap: 40px;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
     nav {
+      font-size: clamp(12px, 2.5vw, 20px);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       column-gap: 30px;
+      @media screen and (max-width: 1000px) {
+        order: 1;
+        column-gap: 10px;
+      }
       a {
         color: #6d4c4c;
         text-decoration: none;
       }
+    }
+  }
+  .copyright {
+    font-size: clamp(12px, 3vw, 20px);
+
+    @media screen and (max-width: 1000px) {
+      order: 2;
     }
   }
 }

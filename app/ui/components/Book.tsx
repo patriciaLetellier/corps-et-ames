@@ -1,45 +1,83 @@
 "use client";
-import React from "react";
-// Exemple d'un fichier JSON
+import React, { useState } from "react";
+import Page from "./Page";
+import adviceList from "../../utils/advicesList.json";
 import Image from "next/image";
 
-export default function Book({ adviceList, currentPage }) {
+export default function Book() {
+  const [page, setPage] = useState(1);
   return (
-    <div className="bookContainer">
-      <div className="book">
-        <div className="profondeur"></div>
-        <div className="profondeur"></div>
-        <div className="profondeur"></div>
-        <div className="profondeur"></div>
-        <div className="pages">
-          <div
-            className={`page ${currentPage > 0 ? "flipped" : ""}`}
-            style={{
-              zIndex: currentPage > 0 + 1 ? 1 : adviceList.length,
-            }}
+    <React.Fragment>
+      <article className="advicesArticle">
+        <div className="book">
+          <Page
+            pageNumber={1}
+            totalPages={adviceList.length + 3}
+            actualPage={page}
           >
-            <div className="front">
-              <Image src="/assets/bookCover.jpg" fill={true} alt="" />
-            </div>
-            <div className="back">couv</div>
-          </div>
+            <Image src="/assets/bookCover3.png" fill={true} alt="" />
+            <h2>Livre d&apos;Or</h2>
+          </Page>
+          <Page
+            pageNumber={2}
+            totalPages={adviceList.length + 3}
+            actualPage={page}
+          >
+            <h3>Corps et Ame</h3>
+            <Image src="/assets/lotus.png" width={300} height={300} alt="" />
+          </Page>
+
           {adviceList.map((advice, index) => (
-            <div
-              key={`page-${index + 1}`}
-              className={`page ${currentPage > index + 1 ? "flipped" : ""}`}
-              style={{
-                zIndex:
-                  currentPage > index + 1
-                    ? index + 1
-                    : adviceList.length - (index + 1),
-              }}
-            >
-              <div className="front">{advice.message}</div>
-              <div className="back">{`Page ${index + 1} - Arrière`}</div>
-            </div>
+            <Page
+              key={advice.author + index}
+              advice={advice}
+              pageNumber={index + 3}
+              totalPages={adviceList.length + 3}
+              actualPage={page}
+            />
           ))}
+          <Page
+            pageNumber={adviceList.length + 3}
+            totalPages={adviceList.length + 3}
+            actualPage={page}
+          >
+            <Image
+              src="/assets/bookCover3.jpg"
+              fill={true}
+              alt=""
+              priority={true}
+            />
+          </Page>
         </div>
-      </div>
-    </div>
+      </article>
+      <aside className="controls">
+        <div
+          className="mainButton"
+          onClick={() => {
+            if (page === 1) {
+              return;
+            } else {
+              const newPage = page - 1;
+              setPage(newPage);
+            }
+          }}
+        >
+          Page precedente
+        </div>
+        <div
+          onClick={() => {
+            if (page === adviceList.length + 2) {
+              return;
+            } else {
+              const newPage = page + 1;
+              setPage(newPage);
+            }
+          }}
+          className="mainButton"
+        >
+          Page suivante
+        </div>
+      </aside>
+    </React.Fragment>
   );
 }

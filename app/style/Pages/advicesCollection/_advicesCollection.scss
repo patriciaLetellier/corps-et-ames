@@ -1,7 +1,11 @@
 .advicesSection {
+  background: linear-gradient(#ffffff, #fae4df, #ffffff);
   padding: 0 60px 60px 60px;
+  @media screen and (max-width: 1000px) {
+    padding: 20px;
+  }
   h1 {
-    font-size: 65px;
+    font-size: clamp(40px, 5vw, 55px);
     font-weight: 600;
     margin-bottom: 60px;
     text-align: center;
