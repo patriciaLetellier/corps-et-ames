@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import "./style/index.scss";
 import Header from "./ui/layouts/Header";
+import { inter } from "./utils/fonts";
 
 export const metadata: Metadata = {
   title: "Corps et Ame",
@@ -15,10 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <link rel="preload" href="/assets/video.png" as="image" />
-      </head>
-      <body>
+      <body className={inter.className}>
         <React.Fragment>
           <Header />
           {children}

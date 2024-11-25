@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import Page from "./Page";
 import adviceList from "../../utils/advicesList.json";
 import Image from "next/image";
+import { dancing_Script } from "../../utils/fonts";
 
 export default function Book() {
   const [page, setPage] = useState(1);
   return (
     <React.Fragment>
-      <article className="advicesArticle">
+      <article className={`advicesArticle ${dancing_Script.className}`}>
         <div className="book">
           <Page
             pageNumber={1}
