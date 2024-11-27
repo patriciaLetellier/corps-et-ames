@@ -25,6 +25,13 @@ footer {
     flex-direction: row;
     column-gap: 15px;
     cursor: pointer;
+    a {
+      transition: opacity 0.5s;
+      opacity: 1;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
   .footerAside {
     display: flex;
@@ -44,11 +51,16 @@ footer {
       column-gap: 30px;
       @media screen and (max-width: 1000px) {
         order: 1;
-        column-gap: 10px;
+        column-gap: 9px;
       }
       a {
         color: #6d4c4c;
         text-decoration: none;
+        opacity: 1;
+        transition: opacity 0.5s;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }

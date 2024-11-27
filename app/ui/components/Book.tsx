@@ -43,7 +43,7 @@ export default function Book() {
             actualPage={page}
           >
             <Image
-              src="/assets/bookCover3.jpg"
+              src="/assets/bookCover3.pnj"
               fill={true}
               alt=""
               priority={true}

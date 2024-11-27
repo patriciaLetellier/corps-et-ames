@@ -18,7 +18,7 @@ export default function ContactInfo() {
             alt=""
           />
           <h2>Adresse</h2>
-          <p>Le Couloubrier - Sainte Maxime</p>
+          <p>Sainte Maxime</p>
         </div>
         <div className="infoWrapper">
           <Image
@@ -28,7 +28,9 @@ export default function ContactInfo() {
             alt=""
           />
           <h2>Téléphone</h2>
-          <p>06 77 88 77 77</p>
+          <p>
+            <a href="tel:+33612626252">06 12 62 62 52</a>
+          </p>
         </div>
         <div className="infoWrapper">
           <Image
@@ -38,11 +40,15 @@ export default function ContactInfo() {
             alt=""
           />
           <h2>Mail</h2>
-          <p>adressemail@mail.com</p>
+          <p>
+            <a href="mailto:patricia.letellier2@hotmail.com">
+              patricia.letellier2@hotmail.com
+            </a>
+          </p>
         </div>
       </article>
       <div className="mapWrapper">
-        <DynamicMap center={[43.330699, 6.603915]} />
+        <DynamicMap center={[43.308779, 6.639488]} />
       </div>
     </section>
   );

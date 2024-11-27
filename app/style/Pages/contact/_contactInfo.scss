@@ -27,7 +27,7 @@
       flex: 1;
       padding: 30px;
 
-        background-color: #a465652b;
+      background-color: #a465652b;
       border-radius: 20px;
       width: 100%;
       max-width: 400px;
@@ -43,6 +43,10 @@
       }
       p {
         font-size: 19px;
+        a {
+          color: #6d4c4c;
+          text-decoration: none;
+        }
       }
     }
   }

@@ -21,20 +21,30 @@ export default function Footer() {
       </Link>
       <ul>
         <li>
-          <Image
-            src="/assets/icons/facebook_icone.svg"
-            height={25}
-            width={25}
-            alt="Découvrez notre Facebook"
-          />
+          <a
+            target="_blank"
+            href="https://www.facebook.com/patricia.letellier.9849/"
+          >
+            <Image
+              src="/assets/icons/facebook_icone.svg"
+              height={25}
+              width={25}
+              alt="Découvrez notre Facebook"
+            />
+          </a>
         </li>
         <li>
-          <Image
-            src="/assets/icons/instagram_icone.svg"
-            height={25}
-            width={25}
-            alt="Découvrez notre Instagram"
-          />
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@letellierpatricia?_t=8rhThBvbAZs&_r=1"
+          >
+            <Image
+              src="/assets/icons/tiktok_icone.svg"
+              height={25}
+              width={25}
+              alt="Découvrez notre Tiktok"
+            />
+          </a>
         </li>
       </ul>
       <div className="footerAside">
@@ -43,7 +53,7 @@ export default function Footer() {
           <Link href={"/contact"}>Accueil</Link>
           <Link href={"/#presentation"}>Qui je suis</Link>
           <Link href={"/#benefits"}>Mes préstations</Link>
-          <Link href={"/recueil-des-avis"}>Livre d'Or </Link>
+          <Link href={"/recueil-des-avis"}>Livre d&apos;Or </Link>
         </nav>
       </div>
     </footer>

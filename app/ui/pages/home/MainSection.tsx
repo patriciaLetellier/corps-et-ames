@@ -24,9 +24,9 @@ export default function MainSection() {
       </article>
       <aside className="mainAside">
         <Image
-          src="/assets/video.png"
-          width={600}
-          height={450}
+          src="/assets/mainPicture.webp"
+          width={1000}
+          height={1200}
           alt=""
           loading="eager"
           priority

@@ -25,16 +25,50 @@ export default function Header() {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
-        <Link className="mainButton" href={"/contact"}>
+        <Link
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          className="mainButton"
+          href={"/contact"}
+        >
           Contactez moi
           <div className="arrowWrapper">
             <Image src="/assets/arrow.svg" width={20} height={20} alt="" />
           </div>
         </Link>
-        <Link href={"/"}>Accueil</Link>
-        <Link href={"/#presentation"}>Qui je suis</Link>{" "}
-        <Link href={"/#benefits"}>Mes préstations</Link>
-        <Link href={"/recueil-des-avis"}>Livre d'Or</Link>
+        <Link
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          href={"/"}
+        >
+          Accueil
+        </Link>
+        <Link
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          href={"/#presentation"}
+        >
+          Qui je suis
+        </Link>
+        <Link
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          href={"/#benefits"}
+        >
+          Mes préstations
+        </Link>
+        <Link
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          href={"/recueil-des-avis"}
+        >
+          Livre d&apos;Or
+        </Link>
       </nav>
       <Link className="mainButton" href={"/contact"}>
         Contactez moi
