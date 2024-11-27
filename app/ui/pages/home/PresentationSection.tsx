@@ -9,7 +9,7 @@ export default function PresentationSection() {
         <article className="presentationArticle">
           <div className="titleAside">Qui je suis</div>
           <h2>Votre partenaire bien-être</h2>
-          <h3>Votre chemin vers l’équilibre commence ici</h3>
+          <h3>Votre chemin vers l&apos;équilibre commence ici</h3>
           <div className="presentationArticleWrapper">
             <p>
               Aller vers son mieux-être..... voilà un début Nous portons en
@@ -17,14 +17,14 @@ export default function PresentationSection() {
               des croyances, à des souvenirs enfouis ou au transgenerationnel,
               (chocs émotionnels non exprimés) qui ne nous appartiennent pas.
               Ils impactent notre corps physique émotionnel et mental mais
-              seraient aussi à l'origine de schémas répétitifs.
+              seraient aussi à l&apos;origine de schémas répétitifs.
             </p>
             <div className="qualificationsWrapper">
               <h4>Qualification :</h4>
               <ul>
                 <li>
                   <p>
-                    Thérapeute en écoute du corps en relation d’aide dans le
+                    Thérapeute en écoute du corps en relation d&apos;aide dans le
                     langage non verbal
                   </p>
                 </li>
