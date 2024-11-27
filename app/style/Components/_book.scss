@@ -1,6 +1,6 @@
 .book {
-  width: 100%;
-  max-width: 365px;
+  width: calc(100% - 30px);
+  max-width: 400px;
   height: 550px;
   min-width: 280px;
   position: relative;
