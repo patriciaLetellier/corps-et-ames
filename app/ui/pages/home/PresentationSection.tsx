@@ -13,7 +13,7 @@ export default function PresentationSection() {
           <div className="presentationArticleWrapper">
             <p>
               Aller vers son mieux-être..... voilà un début Nous portons en
-              nous, tel un tatouagaje, des maux, des fardeaux, des peurs dûs à
+              nous, tel un tatouage, des maux, des fardeaux, des peurs dûs à
               des croyances, à des souvenirs enfouis ou au transgenerationnel,
               (chocs émotionnels non exprimés) qui ne nous appartiennent pas.
               Ils impactent notre corps physique émotionnel et mental mais
