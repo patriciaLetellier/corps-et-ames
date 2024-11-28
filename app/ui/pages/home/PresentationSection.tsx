@@ -12,7 +12,7 @@ export default function PresentationSection() {
           <h3>Votre chemin vers l&apos;équilibre commence ici</h3>
           <div className="presentationArticleWrapper">
             <p>
-              Aller vers son mieux-être..... voilà un début Nous portons en
+              Aller vers son mieux-être..... voilà un début. Nous portons en
               nous, tel un tatouage, des maux, des fardeaux, des peurs dûs à
               des croyances, à des souvenirs enfouis ou au transgenerationnel,
               (chocs émotionnels non exprimés) qui ne nous appartiennent pas.
@@ -30,8 +30,8 @@ export default function PresentationSection() {
                 </li>
                 <li>
                   <p>
-                    Thérapeute en libération des mémoires cellulaire et
-                    transgérationnel
+                    Thérapeute en libération des mémoires cellulaires et
+                    transgérationnelles
                   </p>
                 </li>
                 <li>
