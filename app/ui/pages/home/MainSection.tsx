@@ -6,7 +6,7 @@ export default function MainSection() {
   return (
     <section className="mainSection">
       <article className="mainArticle">
-        <h1>Devenez la meilleur version de vous même !</h1>
+        <h1>Devenez la meilleure version de vous même !</h1>
         <p>
           Libérez vos angoisses, peurs, phobies, hyper-réactivité ... Tout ce
           qui vous empêche d&apos;être, de faire et d&apos;avoir ...
